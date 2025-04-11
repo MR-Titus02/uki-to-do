@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
+      <div>
         <h3>To-do List</h3>
+        <input type="text" id="field"/>
+        <select name="drop" id="dropDown">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button id="task" onclick="myFunction()">Task</button>
+        <br>
+        <div id="taskList"></div>        
+      </div>
     </div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
