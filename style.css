@@ -1,28 +1,67 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b5ff36; /* Neon green background */
+  padding: 20px;
+  margin: 0;
 }
 
-body {
-    background-color: greenyellow;
-}
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40vh auto 0 auto;
-    background-color: whitesmoke;
-    box-shadow: 10px;
-    width: 40%;
-    border-radius: 15px;
-    padding: 15px;
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-h3 {
-    text-align: center;
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border-left: 6px solid transparent; /* Priority color will override this */
+}
+
+.low {
+  border-left-color: yellow;
+}
+
+.medium {
+  border-left-color: orange;
+}
+
+.high {
+  border-left-color: green;
 }
 
 .lists {
-    border-left: 3px solid black;
-    border-radius: 3px;
-    padding: 5px;
+  font-weight: bold;
+  color: black;
+  flex-grow: 1;
+  text-align: left;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#taskList {
+  text-align: left;
+  margin-top: 20px;
 }
